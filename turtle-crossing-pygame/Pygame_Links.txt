@@ -1,0 +1,6 @@
+Repositorio Python+Pygame
+https://github.com/Patataman/PythonBasic/tree/master/frameworks/pygame
+
+
+Design Patterns and Video Games
+https://www.patternsgameprog.com/series/discover-python-and-patterns/
