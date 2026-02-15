@@ -10,12 +10,40 @@ pygame.init()
 my_screen = pygame.display.set_mode((constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT))
 pygame.display.set_caption("El Cavernas y Dragones")
 
+#Create Clock for keep game frame rate
+clock = pygame.time.Clock()
+
+#Define Movement Variables
+moving_left = False
+moving_right = False
+moving_up = False
+moving_down = False
+
 #Create Character
 player = Character(100, 100)
 
 ##Main Game Loop
 game_on = True
 while game_on:
+    #Set Clock
+    clock.tick(constants.FPS)
+    #Fill Background
+    my_screen.fill(constants.BG)
+
+    #Calculate Movement
+    dx = 0
+    dy = 0
+    if moving_right:
+        dx = constants.SPEED
+    if moving_left:
+        dx = -constants.SPEED
+    if moving_up:
+        dy = -constants.SPEED
+    if moving_down:
+        dy = constants.SPEED
+
+    # Move Player
+    player.move(dx, dy)
 
     #Draw Player
     player.draw(my_screen)
@@ -24,6 +52,30 @@ while game_on:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game_on = False
+        #Take Keyboard press events
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_a:
+                moving_left = True
+            if event.key == pygame.K_d:
+                moving_right = True
+            if event.key == pygame.K_w:
+                moving_up = True
+            if event.key == pygame.K_s:
+                moving_down = True
+        # Take Keyboard releases events
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_a:
+                moving_left = False
+            if event.key == pygame.K_d:
+                moving_right = False
+            if event.key == pygame.K_w:
+                moving_up = False
+            if event.key == pygame.K_s:
+                moving_down = False
+
+
+
+
 
     #Update Screen
     pygame.display.update()

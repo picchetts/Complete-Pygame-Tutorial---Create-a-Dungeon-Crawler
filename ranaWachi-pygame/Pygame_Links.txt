@@ -7,4 +7,4 @@ https://www.patternsgameprog.com/series/discover-python-and-patterns/
 
 Curso Udemy
 https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
-LLEGUE A: EMPEZAR °°°°°° 5. Keyboard Input and Player
+LLEGUE A: EMPEZAR °°°°°° 6. Sprites and Animation
