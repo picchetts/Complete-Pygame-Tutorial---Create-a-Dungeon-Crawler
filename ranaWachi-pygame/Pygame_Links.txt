@@ -8,3 +8,9 @@ https://www.patternsgameprog.com/series/discover-python-and-patterns/
 Curso Udemy
 https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
 LLEGUE A: EMPEZAR °°°°°° 6. Sprites and Animation
+
+
+Sprites animados AI
+https://app.ludo.ai/sprite-generator
+https://www.pixellab.ai/signin?redirect=%2Feditor
+
