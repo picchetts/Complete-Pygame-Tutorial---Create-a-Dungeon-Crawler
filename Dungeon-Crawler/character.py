@@ -4,7 +4,9 @@ import math
 
 
 class Character():
-    def __init__(self, x, y):
+    def __init__(self, x, y,image):
+        #creo el campo imagen referenciando el sprite
+        self.image = image
         #creo una forma básica rectangulo de 40x40 en las coordenadas 0, 0
         self.rect = pygame.Rect(0, 0, 40, 40)
         #posiciono rectangulo en coordenadas pasadas a Init
@@ -23,5 +25,7 @@ class Character():
         self.rect.y  += dy
 
     def draw(self, surface):
-        pygame.draw.rect(surface, constants.RED, self.rect)
+        #Agrego imagen en el método Draw
+        surface.blit(self.image, self.rect)
+        pygame.draw.rect(surface, constants.RED, self.rect, 1)
 

@@ -19,8 +19,11 @@ moving_right = False
 moving_up = False
 moving_down = False
 
+#Load Player Image
+player_image = pygame.image.load("assets/images/characters/patatasan/iddle/patatasan_static_100x100.png").convert_alpha()
+
 #Create Character
-player = Character(100, 100)
+player = Character(100, 100, player_image)
 
 ##Main Game Loop
 game_on = True
