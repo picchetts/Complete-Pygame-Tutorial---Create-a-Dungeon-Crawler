@@ -1,3 +1,12 @@
+#####################################################################
+Curso Udemy
+https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
+
+LLEGUE A: 
+		6. Sprites and Animation | 2 Minutis
+#####################################################################
+
+
 Repositorio Python+Pygame
 https://github.com/Patataman/PythonBasic/tree/master/frameworks/pygame
 
@@ -5,9 +14,7 @@ https://github.com/Patataman/PythonBasic/tree/master/frameworks/pygame
 Design Patterns and Video Games
 https://www.patternsgameprog.com/series/discover-python-and-patterns/
 
-Curso Udemy
-https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
-LLEGUE A: EMPEZAR °°°°°° 6. Sprites and Animation
+
 
 
 
