@@ -5,5 +5,5 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 #Colors
-BG = (40, 25, 25)
+BG = (51, 153, 102)
 RED = (255, 0, 0)

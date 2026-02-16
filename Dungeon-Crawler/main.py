@@ -8,7 +8,7 @@ pygame.init()
 
 #Incio Game Window
 my_screen = pygame.display.set_mode((constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT))
-pygame.display.set_caption("El Cavernas y Dragones")
+pygame.display.set_caption("Patatasan and the Killer Cacona")
 
 #Create Clock for keep game frame rate
 clock = pygame.time.Clock()
@@ -25,9 +25,9 @@ player = Character(100, 100)
 ##Main Game Loop
 game_on = True
 while game_on:
-    #Set Clock
+    #Setear Clock FPS
     clock.tick(constants.FPS)
-    #Fill Background
+    #LLenar el background en cada iteración del Clock
     my_screen.fill(constants.BG)
 
     #Calculate Movement
@@ -42,17 +42,17 @@ while game_on:
     if moving_down:
         dy = constants.SPEED
 
-    # Move Player
+    # Movimiento de objetos en pantalla (Mueve en c/iteración, lo que varía es la velocidad si están las teclas presionadas)
     player.move(dx, dy)
 
-    #Draw Player
+    #Draw de Objetos en pantalla
     player.draw(my_screen)
 
-    #Event Handler
+    #Event Handlers
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game_on = False
-        #Take Keyboard press events
+        #Capturar eventos KeyDown
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_a:
                 moving_left = True
@@ -62,7 +62,7 @@ while game_on:
                 moving_up = True
             if event.key == pygame.K_s:
                 moving_down = True
-        # Take Keyboard releases events
+        # Capturar eventos KeyUp
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_a:
                 moving_left = False

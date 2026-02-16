@@ -10,7 +10,9 @@ https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526
 LLEGUE A: EMPEZAR °°°°°° 6. Sprites and Animation
 
 
+
+
 Sprites animados AI
-https://app.ludo.ai/sprite-generator
+https://app.ludo.ai/sprite-generator  <----- Para Patatasan use este
 https://www.pixellab.ai/signin?redirect=%2Feditor
 
