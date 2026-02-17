@@ -3,7 +3,7 @@ Curso Udemy
 https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
 
 LLEGUE A: 
-		6. Sprites and Animation | 2 Minutis
+		6. Sprites and Animation | 13 minuts (empezando animación de sprites)
 #####################################################################
 
 

@@ -20,7 +20,18 @@ moving_up = False
 moving_down = False
 
 #Load Player Image
+
+
+
 player_image = pygame.image.load("assets/images/characters/patatasan/iddle/patatasan_static_100x100.png").convert_alpha()
+
+#Helper Function to Scale Up/ Down image
+def scale_img(image, scale):
+    w = image.get_width()
+    h = image.get_height()
+    return pygame.transform.scale(image, (w * scale, h * scale))
+
+player_image = scale_img(player_image, constants.SCALE)
 
 #Create Character
 player = Character(100, 100, player_image)
