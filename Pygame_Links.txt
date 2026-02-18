@@ -3,7 +3,7 @@ Curso Udemy
 https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
 
 LLEGUE A: 
-		6. Sprites and Animation | 13 minuts (empezando animación de sprites)
+		7. Adding Multiple Animation Types | Empezar
 #####################################################################
 
 
@@ -21,6 +21,15 @@ https://www.patternsgameprog.com/series/discover-python-and-patterns/
 
 Sprites animados AI
 https://app.ludo.ai/sprite-generator  <----- Para Patatasan use este
+---> Temp Emails for Registration: https://temp-mail.org/
+    #Cuentas y animaciones#
+    -hoyama2215@esyline.com | BillyBond26!
+--->Prompts:
+    Generate the following sprites from the uploaded character: the character walking
+                                                                the character jumping,
+                                                                the character crouching
+                                                                the character dancing
+
 https://www.pixellab.ai/signin?redirect=%2Feditor
 
 

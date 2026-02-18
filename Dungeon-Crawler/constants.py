@@ -4,9 +4,8 @@ FPS = 60
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
-SCALE = 0.7
+SCALE = 0.4
 SPEED = 5
-
 
 #Colors
 BG = (51, 153, 102)

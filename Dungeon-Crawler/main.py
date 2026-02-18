@@ -8,7 +8,7 @@ pygame.init()
 
 #Incio Game Window
 my_screen = pygame.display.set_mode((constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT))
-pygame.display.set_caption("Patatasan and the Killer Cacona")
+pygame.display.set_caption("sarasasdasdas")
 
 #Create Clock for keep game frame rate
 clock = pygame.time.Clock()
@@ -23,7 +23,7 @@ moving_down = False
 
 
 
-player_image = pygame.image.load("assets/images/characters/patatasan/iddle/patatasan_static_100x100.png").convert_alpha()
+
 
 #Helper Function to Scale Up/ Down image
 def scale_img(image, scale):
@@ -31,10 +31,16 @@ def scale_img(image, scale):
     h = image.get_height()
     return pygame.transform.scale(image, (w * scale, h * scale))
 
-player_image = scale_img(player_image, constants.SCALE)
+#Creo Lista con frames p/ animación Player
+animation_list = []
+#Obtengo la lista de frames de la animacion del Player (en este caso 18 frames sin un loop completo)
+for i in range(18):
+    img = pygame.image.load(f"assets/images/characters/patatasan/walking/{i}.png").convert_alpha()
+    img = scale_img(img, constants.SCALE)
+    animation_list.append(img)
 
 #Create Character
-player = Character(100, 100, player_image)
+player = Character(100, 100, animation_list)
 
 ##Main Game Loop
 game_on = True
@@ -56,10 +62,13 @@ while game_on:
     if moving_down:
         dy = constants.SPEED
 
-    # Movimiento de objetos en pantalla (Mueve en c/iteración, lo que varía es la velocidad si están las teclas presionadas)
+    # Move Player
     player.move(dx, dy)
 
-    #Draw de Objetos en pantalla
+    # Update Player animation
+    player.update()
+
+    #Draw Player on screen
     player.draw(my_screen)
 
     #Event Handlers
