@@ -1,0 +1,9 @@
+#Remove "frame_0"
+for file in *frame_0*; do
+    mv -- "$file" "${file#*frame_0*}"
+done
+
+#Remove "0"
+for file in *0*; do
+    mv -- "$file" "${file#*0*}"
+done

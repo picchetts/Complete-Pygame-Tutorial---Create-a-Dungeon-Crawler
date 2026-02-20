@@ -20,6 +20,9 @@ https://app.ludo.ai/sprite-generator  <----- Para Patatasan use este
         - run movement Generate the following sprites from the uploaded character: the character walking
         - dance movement Generate the following sprites from the uploaded character: the character dancing
         -Iddle movement: move character like it was iddle in the videogame, waiting for the player to move it
+    -Poo Character
+        - iddle: animate character like it was walking in the videogame, and making a threathening face while moving
+        -run: Animate the character as if it is sliding to the side and making a threatening face as it moves.
 
 #######################################################################################
 
