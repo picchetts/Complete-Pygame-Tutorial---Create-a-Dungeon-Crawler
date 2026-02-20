@@ -9,7 +9,6 @@ class Character():
         self.flip = False
         #Almaceno la lista de frames en un field de la clase
         self.animation_list = animation_list
-        #DEV
         self.frame_index = 0
         self.update_time = pygame.time.get_ticks()
         #creo el campo imagen referenciando la lista de frames del sprite
@@ -26,6 +25,7 @@ class Character():
             self.flip = True
         if dx > 0:
             self.flip = False
+
         #Reduzco Diagonal Speed
         if dx != 0 and dy != 0:
             dx = dx * (math.sqrt(2)/2)

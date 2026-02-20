@@ -24,11 +24,15 @@ https://app.ludo.ai/sprite-generator  <----- Para Patatasan use este
 ---> Temp Emails for Registration: https://temp-mail.org/
     #Cuentas y animaciones#
     -hoyama2215@esyline.com | BillyBond26!
+    trenyce.e4@curtund.com | 1q2w3e4r
 --->Prompts:
     Generate the following sprites from the uploaded character: the character walking
                                                                 the character jumping,
                                                                 the character crouching
                                                                 the character dancing
+    -PAtatasan
+        -Iddle movement: move character like it was iddle in the videogame, waiting for the player to move it
+
 
 https://www.pixellab.ai/signin?redirect=%2Feditor
 
