@@ -26,6 +26,11 @@ def scale_img(image, scale):
     h = image.get_height()
     return pygame.transform.scale(image, (w * scale, h * scale))
 
+#Load Character images
+mob_animations = []
+mob_types = ["patatasan", "poo"]
+
+
 #Create Animation Lists
 animation_types = ["iddle", "run"]
 animation_list = []
