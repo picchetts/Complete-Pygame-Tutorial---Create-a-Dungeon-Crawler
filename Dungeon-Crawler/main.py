@@ -19,11 +19,6 @@ moving_right = False
 moving_up = False
 moving_down = False
 
-#Load Player Image
-
-
-
-
 
 #Helper Function to Scale Up/ Down image
 def scale_img(image, scale):
@@ -31,13 +26,18 @@ def scale_img(image, scale):
     h = image.get_height()
     return pygame.transform.scale(image, (w * scale, h * scale))
 
-#Creo Lista con frames p/ animación Player
+#Create Animation Lists
+animation_types = ["iddle", "run"]
 animation_list = []
-#Obtengo la lista de frames de la animacion del Player (en este caso 18 frames sin un loop completo)
-for i in range(18):
-    img = pygame.image.load(f"assets/images/characters/patatasan/walking/{i}.png").convert_alpha()
-    img = scale_img(img, constants.SCALE)
-    animation_list.append(img)
+for animation in animation_types:
+    #Reset Temporary list of images
+    temp_list = []
+    for i in range(16):
+        img = pygame.image.load(f"assets/images/characters/patatasan/{animation}/{i}.png").convert_alpha()
+        img = scale_img(img, constants.SCALE)
+        temp_list.append(img)
+
+    animation_list.append(temp_list)
 
 #Create Character
 player = Character(100, 100, animation_list)

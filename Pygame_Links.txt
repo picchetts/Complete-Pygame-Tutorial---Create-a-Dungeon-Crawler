@@ -3,9 +3,38 @@ Curso Udemy
 https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
 
 LLEGUE A: 
-		7. Adding Multiple Animation Types | Empezar
+		7. Adding Multiple Animation Types | 6 minutos
 #####################################################################
 
+
+#######################################################################################
+Sprites animados generados con AI
+https://app.ludo.ai/sprite-generator  <----- Para Patatasan use este
+---> Temp Emails for Registration:
+    https://temp-mail.org/
+    -hoyama2215@esyline.com | BillyBond26!
+    https://www.emailondeck.com/
+    trenyce.e4@curtund.com | 1q2w3e4r
+--->Prompts:
+    -Patatasan Character
+        - run movement Generate the following sprites from the uploaded character: the character walking
+        - dance movement Generate the following sprites from the uploaded character: the character dancing
+        -Iddle movement: move character like it was iddle in the videogame, waiting for the player to move it
+
+#######################################################################################
+
+
+
+LINKS
+Sprites animados AI
+https://app.ludo.ai/sprite-generator
+https://www.pixellab.ai/signin?redirect=%2Feditor
+
+
+## manejo de Sprite sheets
+https://www.pygame.org/wiki/Spritesheet
+https://stackoverflow.com/questions/20109487/how-do-i-use-sprite-sheets-in-pygame
+http://programarcadegames.com/python_examples/en/sprite_sheets/
 
 Repositorio Python+Pygame
 https://github.com/Patataman/PythonBasic/tree/master/frameworks/pygame
@@ -14,31 +43,4 @@ https://github.com/Patataman/PythonBasic/tree/master/frameworks/pygame
 Design Patterns and Video Games
 https://www.patternsgameprog.com/series/discover-python-and-patterns/
 
-
-
-
-
-
-Sprites animados AI
-https://app.ludo.ai/sprite-generator  <----- Para Patatasan use este
----> Temp Emails for Registration: https://temp-mail.org/
-    #Cuentas y animaciones#
-    -hoyama2215@esyline.com | BillyBond26!
-    trenyce.e4@curtund.com | 1q2w3e4r
---->Prompts:
-    Generate the following sprites from the uploaded character: the character walking
-                                                                the character jumping,
-                                                                the character crouching
-                                                                the character dancing
-    -PAtatasan
-        -Iddle movement: move character like it was iddle in the videogame, waiting for the player to move it
-
-
-https://www.pixellab.ai/signin?redirect=%2Feditor
-
-
-## manejo de Sprite sheets
-https://www.pygame.org/wiki/Spritesheet
-https://stackoverflow.com/questions/20109487/how-do-i-use-sprite-sheets-in-pygame
-http://programarcadegames.com/python_examples/en/sprite_sheets/
 
