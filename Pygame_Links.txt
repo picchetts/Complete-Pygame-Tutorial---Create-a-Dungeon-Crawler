@@ -3,7 +3,7 @@ Curso Udemy
 https://bancogalicia.udemy.com/course/pygame-dungeon-crawler/learn/lecture/33526260#overview
 
 LLEGUE A: 
-		7. Adding Multiple Animation Types | 6 minutos
+		9. Adding a Bow| EMPEZAR
 #####################################################################
 
 

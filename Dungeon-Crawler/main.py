@@ -26,26 +26,38 @@ def scale_img(image, scale):
     h = image.get_height()
     return pygame.transform.scale(image, (w * scale, h * scale))
 
-#Load Character images
+#Load characters images
 mob_animations = []
 mob_types = ["patatasan", "poo"]
 
-
-#Create Animation Lists
 animation_types = ["iddle", "run"]
-animation_list = []
-for animation in animation_types:
-    #Reset Temporary list of images
-    temp_list = []
-    for i in range(16):
-        img = pygame.image.load(f"assets/images/characters/patatasan/{animation}/{i}.png").convert_alpha()
-        img = scale_img(img, constants.SCALE)
-        temp_list.append(img)
+for mob in mob_types:
+    #Create Animation List for each mob
+    animation_list = []
+    for animation in animation_types:
+        #Reset Temporary list of images
+        temp_list = []
+        for i in range(16):
+            img = pygame.image.load(f"assets/images/characters/{mob}/{animation}/{i}.png").convert_alpha()
+            img = scale_img(img, constants.SCALE)
+            #Añado secuencia de imagenes a lista temporal de cada animacion de movimiento
+            temp_list.append(img)
+        #Añado lista temporal de animacion de c/movimiento  a animation_list
+        animation_list.append(temp_list)
+    #Añado animation_list de cada mob a lista de mob_animations
+    mob_animations.append(animation_list)
 
-    animation_list.append(temp_list)
-
-#Create Character
-player = Character(100, 100, animation_list)
+#Create Characters (uso index para elegi el personaje en base a la lista mob_animations)
+player = Character(100, 100, mob_animations, 0)
+###### POO TEST
+from random import randint
+enemies = []
+for i in range(4):
+    poo = Character(100, 100, mob_animations, 1)
+    poo.rect.x = randint(0, 400)
+    poo.rect.y = randint(0, 300)
+    enemies.append(poo)
+##############
 
 ##Main Game Loop
 game_on = True
@@ -70,11 +82,29 @@ while game_on:
     # Move Player
     player.move(dx, dy)
 
+    ###### POO TEST
+
+    for enemy in enemies:
+        random_module = randint(1, 16)
+        if (pygame.time.get_ticks() % random_module == 0):
+            poo_x = dx + randint(-random_module, random_module)
+            poo_y = dy + randint(-random_module, random_module)
+            enemy.move(poo_x, poo_y)
+
+        #####POO TEST
+        enemy.update()
+        enemy.draw(my_screen)
+        #######
+
+    ###########
+
     # Update Player animation
     player.update()
 
+
     #Draw Player on screen
     player.draw(my_screen)
+
 
     #Event Handlers
     for event in pygame.event.get():

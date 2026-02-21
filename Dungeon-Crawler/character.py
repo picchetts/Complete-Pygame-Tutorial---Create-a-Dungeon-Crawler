@@ -4,17 +4,19 @@ import math
 
 
 class Character():
-    def __init__(self, x, y,animation_list):
+    def __init__(self, x, y,mob_animations, char_type):
+        #Creo variable mob type
+        self.char_type = char_type
         # Creo variable flip para cuando el personaje se gira
         self.flip = False
-        #Almaceno la lista de frames en un field de la clase
-        self.animation_list = animation_list
+        #Almaceno la animation list para el tipo específico de Mob
+        self.animation_list = mob_animations[self.char_type]
         self.frame_index = 0
         self.action = 0 #0:iddle, 1:run
         self.update_time = pygame.time.get_ticks()
         self.running = False
         #creo el campo imagen referenciando la lista animaciones correspondiente
-        self.image = animation_list[self.action][self.frame_index]
+        self.image = self.animation_list[self.action][self.frame_index]
         #creo una forma básica rectangulo de 40x40 en las coordenadas 0, 0
         self.rect = pygame.Rect(0, 0, 40, 40)
         #posiciono rectangulo en coordenadas pasadas a Init
